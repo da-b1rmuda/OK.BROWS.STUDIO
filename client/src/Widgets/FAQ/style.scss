@@ -1,0 +1,22 @@
+.FAQ-title {
+  font-family: "Roboto-Bold", regular;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.FAQ-collapse {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  span {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .ant-collapse-content-box {
+    width: 90%;
+    p {
+      font-family: "FeatureMono", light;
+      font-size: 16px;
+    }
+  }
+}

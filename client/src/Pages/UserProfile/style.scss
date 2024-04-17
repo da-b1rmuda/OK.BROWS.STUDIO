@@ -1,0 +1,64 @@
+.UserProfile-button {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 40px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 65px;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+.UserProfile-user-content {
+  span {
+    font-size: 20px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 50px;
+  }
+}
+
+.UserProfile-back {
+  text-decoration: underline;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.UserProfile-container {
+  margin-top: 40px;
+  h1 {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.UserProfile-user-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.UserProfile-history-content {
+  margin: 0 10px;
+}
+
+.UserProfile-filler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+
+  .UserProfile-button {
+    margin-bottom: 100px;
+  }
+}

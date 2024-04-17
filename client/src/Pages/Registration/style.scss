@@ -1,0 +1,46 @@
+.Registration-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Registration-title {
+  font-family: "Roboto-Bold", regular;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Registration-container {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 400px;
+  }
+  a,
+  span,
+  label,
+  input {
+    font-family: "FeatureMono", light;
+    font-size: 20px !important;
+  }
+  .ant-btn {
+    height: 40px;
+  }
+  .ant-form-item-label {
+    max-width: none !important;
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.Registration-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Registration-wrapper {
+  display: flex;
+  flex-direction: column;
+}

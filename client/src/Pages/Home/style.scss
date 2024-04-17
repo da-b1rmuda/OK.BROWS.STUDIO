@@ -1,0 +1,14 @@
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home-header__links {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

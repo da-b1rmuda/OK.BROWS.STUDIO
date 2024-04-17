@@ -1,0 +1,70 @@
+.Header-container {
+  width: 100%;
+  height: 600px;
+  padding: 10px 20px;
+  background-image: url("../../assets/bgc.png");
+  background-size: cover;
+}
+
+.Header-nav {
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    line-height: 25px;
+  }
+}
+
+.Header-logo {
+  font-size: 70px;
+  line-height: 80px;
+  font-family: "Roboto-Bold", regular;
+}
+
+.Header-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-right {
+  a {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.Header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  padding-right: 10px;
+  margin-top: 110px;
+  p {
+    width: 500px;
+    line-height: 20px;
+  }
+}
+
+.Header-content-container {
+  display: flex;
+  justify-content: end;
+}
+
+.Header-content-buttons {
+  display: flex;
+  flex-direction: column;
+  button {
+    border-radius: 30px;
+    border-color: #f4f4f43f;
+    background-color: #f4f4f43f;
+  }
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #f4f4f4c0;
+  }
+}
+
+.Header-content-buttons-paddings {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}

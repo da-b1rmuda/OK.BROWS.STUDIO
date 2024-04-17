@@ -1,0 +1,38 @@
+.selected-cell {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.PlaningDays-container {
+  .ant-radio-button-wrapper {
+    display: none !important;
+  }
+}
+
+.PlaningDays-calendar {
+  * {
+    font-size: 16px !important;
+  }
+}
+
+.PlaningDays-time {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .PlaningDays-time-block {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      width: 200px !important;
+    }
+  }
+}
+
+.PlaningDays-button {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+.CreateBookingModal-form {
+  label {
+    font-family: "FeatureMono", light;
+    font-size: 25px !important;
+  }
+  .ant-radio-button-wrapper {
+    height: 50px;
+    padding-top: 10px;
+  }
+}
+
+.CreateBookingModal-timeBlock-filler {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  p {
+    font-size: 30px;
+    color: #969696;
+  }
+}
+
+.CreateBookingModal-modal {
+  .ant-modal-content {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+  .ant-modal-title {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+}
+
+.CreateBookingModal-button {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 40px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 65px !important;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+.CreateBookingModal-select {
+  span,
+  input {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+
+  .ant-select {
+    width: 250px;
+  }
+}
+
+.CreateBookingModal-timeBlock {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.CreateBookingModal-timeBlock-container {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.CreateBookingModal-selectService {
+  display: flex;
+  justify-content: space-between;
+  p:last-of-type {
+    margin-right: 30px;
+  }
+}

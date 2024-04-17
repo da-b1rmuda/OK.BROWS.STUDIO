@@ -1,0 +1,55 @@
+.CreateReviewModal-title {
+  position: relative;
+  margin-top: 10px;
+  img {
+    width: 180px;
+    margin-left: 100px;
+  }
+
+  h1 {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.CreateReviewModal-form {
+  label,
+  input,
+  textarea {
+    font-family: "FeatureMono", light;
+    font-size: 20px !important;
+  }
+  .ant-radio-button-wrapper {
+    height: 50px;
+    padding-top: 10px;
+  }
+}
+
+.CreateReviewModal-modal {
+  .ant-modal-content {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+  .ant-modal-title {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+}
+
+.CreateReviewModal-button {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 40px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 65px !important;
+    border-radius: 20px;
+    border: none;
+  }
+}

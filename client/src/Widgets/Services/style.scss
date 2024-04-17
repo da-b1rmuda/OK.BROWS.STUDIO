@@ -1,0 +1,52 @@
+.Service-content-wrapper {
+  border: 1px solid black;
+  padding: 40px;
+  margin: 0 15px;
+}
+
+.Service-title {
+  font-family: "Roboto-Bold", regular;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Services-content {
+  p {
+    font-size: 25px;
+  }
+  h2 {
+    font-weight: 100;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+.Services-content-title {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.Services-content-title__withMargin {
+  margin-top: 25px;
+}
+
+.Services-content-item {
+  text-transform: lowercase;
+}
+
+.Services-content-margin {
+  line-height: 25px;
+}
+
+.Services-content-item__description {
+  text-transform: lowercase;
+  color: #898989;
+  margin-bottom: 10px;
+  width: 670px;
+}
+
+.Services-content {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,52 @@
+.CreateServiceModal-title {
+  h1 {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+}
+
+.CreateServiceModal-form {
+  label,
+  input,
+  textarea {
+    font-family: "FeatureMono", light;
+    font-size: 20px !important;
+  }
+  .ant-radio-button-wrapper {
+    height: 50px;
+    padding-top: 10px;
+  }
+}
+
+.CreateServiceModal-modal {
+  .ant-modal-content {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+  .ant-modal-title {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+  .ant-select span {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+  .ant-input-number input {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+}
+
+.CreateServiceModal-button {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 40px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 65px !important;
+    border-radius: 20px;
+    border: none;
+  }
+}

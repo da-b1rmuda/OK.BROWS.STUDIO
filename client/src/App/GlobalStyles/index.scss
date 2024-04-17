@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FeatureMono";
+  src: url("../Fonts/FeatureMono-Light.ttf") format("truetype"),
+    url("../Fonts/FeatureMono-Bold.ttf") format("truetype"),
+    url("../Fonts/FeatureMono-Normal.ttf") format("truetype"),
+    url("../Fonts/FeatureMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../Fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "FeatureMono", light;
+  font-size: 20px;
+  overflow-x: hidden;
+  a {
+    color: #363636;
+    cursor: pointer;
+  }
+  p {
+    color: #363636;
+  }
+  h1 {
+    color: #363636;
+  }
+
+  .ant-btn {
+    background-color: #00000000;
+    color: #363636;
+  }
+  .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #00000000;
+  }
+
+  .ant-form-item
+    .ant-form-item-label
+    > label.ant-form-item-required:not(
+      .ant-form-item-required-mark-optional
+    )::before {
+    display: none;
+  }
+
+  .ant-message-notice-content {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .ant-message-success {
+    span {
+      padding-bottom: 8px;
+    }
+  }
+
+  .ant-message-error {
+    span {
+      padding-bottom: 10px;
+    }
+  }
+}

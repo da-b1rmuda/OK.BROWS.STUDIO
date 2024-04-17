@@ -1,0 +1,87 @@
+.Reviews-title {
+  h1 {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+}
+
+.Reviews-content-container {
+  display: flex;
+  font-size: 25px;
+}
+
+.Reviews-content {
+  margin-right: 20px;
+  p {
+    width: 390px;
+    text-align: center;
+  }
+}
+
+.Reviews-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    text-align: center;
+    width: 400px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.Reviews-author-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:first-of-type {
+    background-image: url("/assets/arrow-left.png");
+  }
+  button:last-of-type {
+    background-image: url("/assets/arrow-right.png");
+  }
+}
+
+.Reviews-content-wrapper {
+  margin-top: 30px;
+  .Reviews-content-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    border: 1px solid black;
+  }
+}
+
+.Reviews-text {
+  font-size: 25px;
+  margin: 25px;
+}
+
+.Reviews-button {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 40px;
+  }
+  .ant-btn {
+    padding: 0px 20px;
+    height: 65px;
+    border-radius: 20px;
+    border: none;
+  }
+  margin-bottom: 100px;
+}

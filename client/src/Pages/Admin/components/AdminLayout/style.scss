@@ -1,0 +1,43 @@
+.AdminLayout-container {
+  .ant-layout {
+    min-height: 100vh;
+  }
+  .ant-layout-sider-children {
+    background-color: #fff;
+  }
+  .ant-menu-dark {
+    background-color: #fff;
+    .ant-menu-item {
+      span {
+        color: #515151;
+      }
+    }
+    .ant-menu-item-selected {
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.AdminLayout-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  img {
+    width: 40px;
+  }
+}
+
+.AdminLayout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 0;
+  background-color: #fff;
+  p {
+    font-size: 28px;
+  }
+}

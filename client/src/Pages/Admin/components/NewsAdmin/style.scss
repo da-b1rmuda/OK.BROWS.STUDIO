@@ -1,0 +1,66 @@
+.NewsAdmin-editor-button {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.NewsAdmin-button {
+  display: flex;
+  justify-content: end;
+}
+
+.NewsAdmin-editor-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.quill-editor {
+  width: 1020px;
+  .ql-editor {
+    height: 63vh;
+  }
+}
+
+.ReactQuill-editor-wrapper {
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-family: "Roboto-Bold", regular;
+    font-size: 50px;
+  }
+  ol,
+  ul,
+  p,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "FeatureMono", light;
+    font-size: 20px;
+  }
+}
+
+.img-news {
+  height: 100%;
+  img {
+    width: 600px;
+    height: auto;
+  }
+}
+
+.NewsAdmin-content {
+  .ant-table-cell img {
+    width: 100%; /* или другая ширина, подходящая для вашего дизайна */
+    height: auto; /* сохраняет пропорции изображения */
+    object-fit: cover; /* обрезает изображение, чтобы оно заполнило элемент */
+  }
+}
+
+.ql-editor-wrapper-width {
+  max-width: 1020px;
+}

@@ -1,0 +1,44 @@
+.Login-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login-title {
+  font-family: "Roboto-Bold", regular;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Login-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 260px);
+  img {
+    width: 400px;
+  }
+  a,
+  span,
+  label,
+  input {
+    font-family: "FeatureMono", light;
+    font-size: 20px !important;
+  }
+  .ant-btn {
+    height: 40px;
+  }
+  .ant-form-item-label {
+    max-width: none !important;
+  }
+}
+
+.Login-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Login-wrapper {
+  display: flex;
+  flex-direction: column;
+}
