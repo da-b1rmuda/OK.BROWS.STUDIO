@@ -1,4 +1,4 @@
-name: "nginx_react_typescript_docker"
+name: "ok_brows"
 
 services:
   server:
@@ -20,7 +20,7 @@ services:
   client:
     build: ./client
     ports:
-      - 80:7698
+      - 87.242.87.214:80:7698
     depends_on:
       - server
     networks:
