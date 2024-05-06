@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
 import express from "express";
-import cors from "cors";
 import bodyParser from "body-parser";
 import errorMiddleware from "./middleware/error.middleware.js";
 
@@ -17,13 +16,6 @@ const PORT = process.env.PORT || 8080;
 
 const app = express();
 
-app.use(
-  cors({
-    credentials: true,
-    origin: process.env.CLIENT_URL,
-    optionSuccessStatus: 200,
-  })
-);
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(
   bodyParser.urlencoded({
@@ -34,7 +26,7 @@ app.use(
 );
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", process.env.CLIENT_URL);
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, OPTIONS"

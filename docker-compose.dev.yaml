@@ -4,7 +4,7 @@ services:
   server:
     build: ./server
     environment:
-      - CLIENT_URL=http://localhost:7698/
+      - CLIENT_URL=http://localhost
       - HOST=postgres
       - USERNAME=postgres
       - PASSWORD=password
