@@ -1,0 +1,56 @@
+name: "nginx_react_typescript_docker"
+
+services:
+  server:
+    build: ./server
+    environment:
+      - CLIENT_URL=http://localhost:7698/
+      - HOST=postgres
+      - USERNAME=postgres
+      - PASSWORD=password
+      - DATABASE=ok_brows_db
+    ports:
+      - 5001:5002
+    depends_on:
+      - postgres
+    networks:
+      network:
+        ipv4_address: 3.10.0.20
+
+  client:
+    build: ./client
+    ports:
+      - 80:7698
+    depends_on:
+      - server
+    networks:
+      network:
+        ipv4_address: 3.10.0.30
+
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5434:5432"
+    restart: unless-stopped
+    volumes:
+      - postgres:/var/lib/postgresql/data/
+      - "./postgres/dataset:/docker-entrypoint-initdb.d"
+    environment:
+      - POSTGRES_DB=ok_brows_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - MAX_LOGIN_ATTEMPTS=0
+    networks:
+      network:
+        ipv4_address: 3.10.0.50
+
+volumes:
+  postgres:
+
+networks:
+  network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 3.10.0.0/16
+          gateway: 3.10.0.1

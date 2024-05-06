@@ -2,12 +2,7 @@ import pg from "pg";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const USERNAME = "postgres";
-const PASSWORD = "root";
-const HOST = "localhost";
-const DATABASE = "ok_brows_db";
-
-const conStringPri = `postgres://${USERNAME}:${PASSWORD}@${HOST}/${DATABASE}`;
+const conStringPri = `postgres://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.HOST}:5432/${process.env.DATABASE}`;
 const Client = pg.Client;
 const client = new Client({ connectionString: conStringPri });
 client.connect();

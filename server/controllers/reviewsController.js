@@ -33,6 +33,7 @@ class ReviewsController {
 
   async GetDefiniteReviews(req, res, next) {
     try {
+      console.log("Get Definitions");
       const response = await reviewsService.getDefiniteReviews();
       return res.json(response.rows);
     } catch (e) {
