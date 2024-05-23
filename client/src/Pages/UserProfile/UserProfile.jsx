@@ -13,7 +13,7 @@ function UserProfile() {
   const [openBookingModal, setOpenBookingModal] = useState(false);
   const [openReviewModal, setOpenReviewModal] = useState(false);
   const { data: booking } = bookingApi.useGetAppointmentsUserQuery(
-    user?.user_id
+    user.user_id
   );
 
   const [bookingData, setBookingData] = useState();

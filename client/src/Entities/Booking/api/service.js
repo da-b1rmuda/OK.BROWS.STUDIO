@@ -71,6 +71,14 @@ export const bookingApi = createApi({
       },
       providesTags: ["Resource"],
     }),
+    getTotalSum: builder.query({
+      query: () => {
+        return {
+          url: `/appointments/getTotalSum`,
+        };
+      },
+      providesTags: ["Resource"],
+    }),
   }),
 });
 
@@ -81,4 +89,5 @@ export const {
   useEditStatusAppointmentMutation,
   useGetAppointmentsQuery,
   useGetAppointmentsStatusQuery,
+  useGetTotalSumQuery,
 } = bookingApi;

@@ -10,6 +10,7 @@ import {
   ProjectOutlined,
   ProductOutlined,
   MessageOutlined,
+  InfoCircleOutlined,
 } from "@ant-design/icons";
 import { masterApi } from "../../../../Entities/Master/api/service";
 import { Layout, Menu, Button } from "antd";
@@ -42,6 +43,7 @@ function AdminLayout({ children }) {
     getItem("Услуги", "services", <ProductOutlined />),
     getItem("Новости", "news", <ProjectOutlined />),
     getItem("Отзывы", "reviews", <MessageOutlined />),
+    getItem("Справка", "reference", <InfoCircleOutlined />),
   ];
 
   useEffect(() => {

@@ -10,6 +10,7 @@ import {
   ServicesAdmin,
   NewsAdmin,
   ReviewsAdmin,
+  Reference,
 } from "../../Pages/Admin/components/index.js";
 import AdminLayout from "../../Pages/Admin/components/AdminLayout/AdminLayout.jsx";
 
@@ -26,6 +27,7 @@ export const routePath = {
   SERVICES: "/services",
   NEWS: "/news",
   REVIEWS: "/reviews",
+  REFERENCE: "/reference",
 };
 
 export const unAuthRoutes = createBrowserRouter([
@@ -143,6 +145,14 @@ export const adminRoutes = createBrowserRouter([
         element: (
           <AdminLayout>
             <ServicesAdmin />
+          </AdminLayout>
+        ),
+      },
+      {
+        path: routePath.REFERENCE,
+        element: (
+          <AdminLayout>
+            <Reference />
           </AdminLayout>
         ),
       },

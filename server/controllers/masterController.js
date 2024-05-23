@@ -5,6 +5,7 @@ class MasterController {
   async EditMasterWorking(req, res, next) {
     try {
       const { work_days, work_time } = req.body;
+      console.log("ok");
       await masterService.editMasterWorking(work_days, work_time);
       return res.json("Данные мастера успешно изменены");
     } catch (e) {
@@ -24,6 +25,7 @@ class MasterController {
   async DeletePreviousDates(req, res, next) {
     try {
       await masterService.deletePreviousDates();
+      return res.json("Запись успешно удалена");
     } catch (e) {
       next(e);
     }

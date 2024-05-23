@@ -32,5 +32,6 @@ appointmentsRouter.get(
   "/getAppointmentsStatus",
   appointmentsController.GetAppointmentsStatus
 );
+appointmentsRouter.get("/getTotalSum", appointmentsController.GetTotalSum);
 
 export default appointmentsRouter;

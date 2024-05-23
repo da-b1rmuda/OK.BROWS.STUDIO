@@ -107,6 +107,23 @@ order by a.appointment_date desc`);
     const response = await client.query(`select * from appointment_status`);
     return response;
   }
+
+  async getTotalSum() {
+    const response = await client.query(
+      `SELECT 
+      TO_CHAR(ap.appointment_date, 'MM.YYYY') AS month,
+      SUM(CAST(sv.price AS numeric)) AS total_price
+  FROM 
+      appointments AS ap
+  INNER JOIN 
+      services AS sv ON ap.service_id = sv.service_id
+  GROUP BY 
+      TO_CHAR(ap.appointment_date, 'MM.YYYY')
+  ORDER BY 
+      month;`
+    );
+    return response;
+  }
 }
 
 export default AppointmentsService;

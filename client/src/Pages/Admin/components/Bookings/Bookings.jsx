@@ -20,7 +20,7 @@ import {
   DeleteOutlined,
 } from "@ant-design/icons";
 import { bookingApi } from "../../../../Entities/Booking/api/service";
-import { CreateBookingModal } from "../../../../Widgets";
+import { CreateBookingModal, Report } from "../../../../Widgets";
 
 function Bookings() {
   const { data: booking } = bookingApi.useGetAppointmentsQuery();
@@ -232,14 +232,17 @@ function Bookings() {
         Управление записями клиентов
       </h1>
       <div>
-        <Input
-          size={"large"}
-          style={{ width: "16vw" }}
-          placeholder="Поиск..."
-          prefix={<SearchOutlined />}
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
+        <div className="Bookings-header">
+          <Input
+            size={"large"}
+            style={{ width: "16vw" }}
+            placeholder="Поиск..."
+            prefix={<SearchOutlined />}
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <Report />
+        </div>
         <Table
           pagination={{
             pageSize: 6,

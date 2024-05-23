@@ -66,7 +66,12 @@ class AppointmentsController {
   async GetAppointmentsUser(req, res, next) {
     try {
       const { id } = req.params;
-      const response = await appointmentsService.getAppointmentsUser(id);
+      let response;
+      if (id !== "undefined" && id !== null) {
+        response = await appointmentsService.getAppointmentsUser(id);
+      } else {
+        return res.json("skip");
+      }
       return res.json(response.rows);
     } catch (e) {
       next(e);
@@ -76,6 +81,15 @@ class AppointmentsController {
   async GetAppointmentsStatus(req, res, next) {
     try {
       const response = await appointmentsService.getAppointmentsStatus();
+      return res.json(response.rows);
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  async GetTotalSum(req, res, next) {
+    try {
+      const response = await appointmentsService.getTotalSum();
       return res.json(response.rows);
     } catch (e) {
       next(e);

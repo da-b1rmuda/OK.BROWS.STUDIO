@@ -10,6 +10,7 @@ import Footer from "./Footer/Footer";
 import CreateBookingModal from "./Modals/CreateBookingModal/CreateBookingModal";
 import CreateReviewModal from "./Modals/CreateReviewModal/CreateReviewModal";
 import CreateServiceModal from "./Modals/CreateServiceModal/CreateServiceModal";
+import Report from "./Report/Report";
 
 export {
   NotFound,
@@ -24,4 +25,5 @@ export {
   CreateBookingModal,
   CreateReviewModal,
   CreateServiceModal,
+  Report,
 };
