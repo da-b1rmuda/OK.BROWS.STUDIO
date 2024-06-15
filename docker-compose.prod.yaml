@@ -1,4 +1,4 @@
-name: "ok_brows"
+name: 'ok_brows'
 
 services:
   server:
@@ -7,7 +7,7 @@ services:
       - CLIENT_URL=http://87.242.87.214
       - HOST=postgres
       - USERNAME=postgres
-      - PASSWORD=password
+      - PASSWORD=ryCoAYxJ9j
       - DATABASE=ok_brows_db
     ports:
       - 5001:5002
@@ -30,15 +30,15 @@ services:
   postgres:
     image: postgres:latest
     ports:
-      - "5434:5432"
+      - '5434:5432'
     restart: unless-stopped
     volumes:
       - postgres:/var/lib/postgresql/data/
-      - "./postgres/dataset:/docker-entrypoint-initdb.d"
+      - './postgres/dataset:/docker-entrypoint-initdb.d'
     environment:
       - POSTGRES_DB=ok_brows_db
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_PASSWORD=ryCoAYxJ9j
       - MAX_LOGIN_ATTEMPTS=0
     networks:
       network:
